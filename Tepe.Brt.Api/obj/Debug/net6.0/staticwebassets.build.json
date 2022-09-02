@@ -1,0 +1,19 @@
+{
+  "Version": 1,
+  "Hash": "JbBklGFnGLbEcCHPBVM5HTrBwPALSDjTRbu5mMkUrww=",
+  "Source": "Tepe.Brt.Api",
+  "BasePath": "_content/Tepe.Brt.Api",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "Tepe.Brt.Api\\wwwroot",
+      "Source": "Tepe.Brt.Api",
+      "ContentRoot": "D:\\Development\\Github\\tepe.brt\\src\\Tepe.Brt.Api\\wwwroot\\",
+      "BasePath": "_content/Tepe.Brt.Api",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": []
+}

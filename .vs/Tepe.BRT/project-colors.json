@@ -1,0 +1,21 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "d48867d0-38ca-40b1-983c-52205941ad56": {
+      "ProjectGuid": "d48867d0-38ca-40b1-983c-52205941ad56",
+      "DisplayName": "Tepe.Brt.Business",
+      "ColorIndex": 0
+    },
+    "3c602cab-f3c1-4a88-b620-dc867bcb0436": {
+      "ProjectGuid": "3c602cab-f3c1-4a88-b620-dc867bcb0436",
+      "DisplayName": "Tepe.Brt.Data",
+      "ColorIndex": 1
+    },
+    "26ee60c3-a4f4-4a3b-a128-42fd7fa89b9f": {
+      "ProjectGuid": "26ee60c3-a4f4-4a3b-a128-42fd7fa89b9f",
+      "DisplayName": "Tepe.Brt.Api",
+      "ColorIndex": 2
+    }
+  },
+  "NextColorIndex": 3
+}

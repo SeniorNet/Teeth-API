@@ -1,0 +1,14 @@
+D:\Development\Github\tepe.brt\src\Tepe.Brt.Data\bin\Debug\net6.0\Tepe.Brt.Data.deps.json
+D:\Development\Github\tepe.brt\src\Tepe.Brt.Data\bin\Debug\net6.0\Tepe.Brt.Data.runtimeconfig.json
+D:\Development\Github\tepe.brt\src\Tepe.Brt.Data\bin\Debug\net6.0\Tepe.Brt.Data.dll
+D:\Development\Github\tepe.brt\src\Tepe.Brt.Data\bin\Debug\net6.0\Tepe.Brt.Data.pdb
+D:\Development\Github\tepe.brt\src\Tepe.Brt.Data\obj\Debug\net6.0\Tepe.Brt.Data.csproj.AssemblyReference.cache
+D:\Development\Github\tepe.brt\src\Tepe.Brt.Data\obj\Debug\net6.0\Tepe.Brt.Data.GeneratedMSBuildEditorConfig.editorconfig
+D:\Development\Github\tepe.brt\src\Tepe.Brt.Data\obj\Debug\net6.0\Tepe.Brt.Data.AssemblyInfoInputs.cache
+D:\Development\Github\tepe.brt\src\Tepe.Brt.Data\obj\Debug\net6.0\Tepe.Brt.Data.AssemblyInfo.cs
+D:\Development\Github\tepe.brt\src\Tepe.Brt.Data\obj\Debug\net6.0\Tepe.Brt.Data.csproj.CoreCompileInputs.cache
+D:\Development\Github\tepe.brt\src\Tepe.Brt.Data\obj\Debug\net6.0\Tepe.Brt.Data.dll
+D:\Development\Github\tepe.brt\src\Tepe.Brt.Data\obj\Debug\net6.0\refint\Tepe.Brt.Data.dll
+D:\Development\Github\tepe.brt\src\Tepe.Brt.Data\obj\Debug\net6.0\Tepe.Brt.Data.pdb
+D:\Development\Github\tepe.brt\src\Tepe.Brt.Data\obj\Debug\net6.0\Tepe.Brt.Data.genruntimeconfig.cache
+D:\Development\Github\tepe.brt\src\Tepe.Brt.Data\obj\Debug\net6.0\ref\Tepe.Brt.Data.dll
