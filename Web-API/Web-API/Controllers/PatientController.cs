@@ -8,13 +8,12 @@ namespace Web_API.Controllers
     public class PatientController : ControllerBase
     {
 
-        private readonly DbManagement _context;
-        private readonly IWebHostEnvironment _env;
-        private readonly IHttpContextAccessor _httpContextAccessor;
+        //private readonly DbManagement _context;
+        //private readonly IWebHostEnvironment _env;
         public PatientController(DbManagement context, IWebHostEnvironment env)
         {
-            _context = context;
-            _env = env;
+            //_context = context;
+            //_env = env;
         }
 
         [HttpPost("Save")]
