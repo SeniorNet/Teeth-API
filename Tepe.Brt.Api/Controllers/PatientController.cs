@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Mvc;
 using Tepe.Brt.Api.ViewModels;
 using Tepe.Brt.Business.Services;
 using Tepe.Brt.Data.Entities;
+using Newtonsoft.Json;
 
 namespace Tepe.Brt.Api.Controllers
 {
@@ -14,9 +15,12 @@ namespace Tepe.Brt.Api.Controllers
         private readonly IGenericService _genericService;
         private readonly IMapper _mapper;
         private readonly ILogger<PatientController> _logger;
+        private readonly IWebHostEnvironment _env;
+        private string localDirectoryPath = "files/RecommendationImages/";
 
-        public PatientController(ILogger<PatientController> logger, IMapper mapper, IGenericService genericService)
+        public PatientController(ILogger<PatientController> logger, IMapper mapper, IGenericService genericService, IWebHostEnvironment env)
         {
+            _env = env;
             _logger = logger;
             _mapper = mapper;
             _genericService = genericService;
@@ -53,10 +57,59 @@ namespace Tepe.Brt.Api.Controllers
 
         // Method to save the patient detail
         [HttpPost(Name = "SavePatientDetail")]
-        public async Task<IResult> SavePatientDetail(PatientVM model)
+        public async Task<IResult> SavePatientDetail([FromBody]DataVM model)
         {
-            PatientEntity patients = _mapper.Map<PatientEntity>(model);
+            PatientVM patientModel = new PatientVM();
+            patientModel.Email = model.email;
+            patientModel.PhoneNumber = model.phone_number;
+
+            PatientEntity patients = _mapper.Map<PatientEntity>(patientModel);
             var result = await _genericService.SavePatientDetail(patients);
+
+            RecommendationVM recommend = new RecommendationVM();
+            recommend.MissingArray = model.missing;
+            recommend.BridgeArray = model.bridge;
+            recommend.Bridge = String.Join(",", model.bridge.Select(p=>p.ToString()).ToArray());
+            recommend.Missing = String.Join(",", model.missing.Select(p => p.ToString()).ToArray());
+            recommend.Comment = model.comment;
+            recommend.PatientID = patients.Id;
+            recommend.Patient = patientModel;
+
+            if (model.teeth_image != null)
+            {
+                var directoryPath = Path.Combine(_env.WebRootPath, localDirectoryPath);
+                var uniqueFileName = GetUniqueFileName(model.teeth_image.FileName);
+                var filePath = Path.Combine(directoryPath, uniqueFileName);
+                model.teeth_image.CopyTo(new FileStream(filePath, FileMode.Create));
+                model.Image = localDirectoryPath + uniqueFileName;
+            }
+            recommend.Image = model.Image;
+
+            RecommendationEntity recommendEntity = _mapper.Map<RecommendationEntity>(recommend);
+            var result_recommend = await _genericService.SaveRecommendationDetail(recommendEntity);
+
+            if(result_recommend == null)
+            {
+                return Results.NotFound();
+            }
+
+            foreach (var item in model.recommendations)
+            {
+                ProductVM product = new ProductVM();
+                product.Area = item.area;
+                product.Title = item.title;
+                product.Description = item.description;
+                product.RecommendationID = recommendEntity.Id;
+
+                ProductEntity products = _mapper.Map<ProductEntity>(product);
+                var result_products = await _genericService.SaveProductDetail(products);
+
+                if(result_products == null)
+                {
+                    return Results.NotFound();
+                }
+            }
+
             if (result == null)
             {
                 return Results.NotFound();
@@ -85,5 +138,15 @@ namespace Tepe.Brt.Api.Controllers
             return Results.Ok();
         }
         #endregion
+
+        // Method to generate a unique path of the image file
+        private string GetUniqueFileName(string fileName)
+        {
+            fileName = Path.GetFileName(fileName);
+            return Path.GetFileNameWithoutExtension(fileName)
+                      + "_"
+                      + Guid.NewGuid().ToString().Substring(0, 4)
+                      + Path.GetExtension(fileName);
+        }
     }
 }

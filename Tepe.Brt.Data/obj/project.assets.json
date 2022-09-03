@@ -1871,11 +1871,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\MISUKA\\Desktop\\src\\Tepe.Brt.Data\\Tepe.Brt.Data.csproj",
+      "projectUniqueName": "E:\\GitHub\\DotNet\\Teeth-API\\Tepe.Brt.Data\\Tepe.Brt.Data.csproj",
       "projectName": "Tepe.Brt.Data",
-      "projectPath": "C:\\Users\\MISUKA\\Desktop\\src\\Tepe.Brt.Data\\Tepe.Brt.Data.csproj",
+      "projectPath": "E:\\GitHub\\DotNet\\Teeth-API\\Tepe.Brt.Data\\Tepe.Brt.Data.csproj",
       "packagesPath": "C:\\Users\\MISUKA\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\MISUKA\\Desktop\\src\\Tepe.Brt.Data\\obj\\",
+      "outputPath": "E:\\GitHub\\DotNet\\Teeth-API\\Tepe.Brt.Data\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\MISUKA\\AppData\\Roaming\\NuGet\\NuGet.Config",

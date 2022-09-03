@@ -13,8 +13,7 @@ namespace Tepe.Brt.Data
         {
             modelBuilder.Entity<RecommendationEntity>()
                 .HasOne<PatientEntity>(s => s.Patient)
-                .WithMany(g => g.Recommendations)
-                .HasForeignKey(s => s.PatientID);
+                .WithMany(g => g.Recommendations);
         }
 
         #region Entities

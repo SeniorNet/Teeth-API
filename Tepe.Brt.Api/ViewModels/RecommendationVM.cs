@@ -24,10 +24,10 @@ namespace Tepe.Brt.Api.ViewModels
         public string? Missing { get; set; }
 
         [NotMapped]
-        public int[] BridgeArray { get; set; }
+        public List<int> BridgeArray { get; set; }
 
         [NotMapped]
-        public int[] MissingArray { get; set; }
+        public List<int> MissingArray { get; set; }
 
         public Guid PatientID { get; set; }
 

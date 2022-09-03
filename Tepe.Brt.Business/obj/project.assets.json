@@ -1823,11 +1823,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\MISUKA\\Desktop\\src\\Tepe.Brt.Business\\Tepe.Brt.Business.csproj",
+      "projectUniqueName": "E:\\GitHub\\DotNet\\Teeth-API\\Tepe.Brt.Business\\Tepe.Brt.Business.csproj",
       "projectName": "Tepe.Brt.Business",
-      "projectPath": "C:\\Users\\MISUKA\\Desktop\\src\\Tepe.Brt.Business\\Tepe.Brt.Business.csproj",
+      "projectPath": "E:\\GitHub\\DotNet\\Teeth-API\\Tepe.Brt.Business\\Tepe.Brt.Business.csproj",
       "packagesPath": "C:\\Users\\MISUKA\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\MISUKA\\Desktop\\src\\Tepe.Brt.Business\\obj\\",
+      "outputPath": "E:\\GitHub\\DotNet\\Teeth-API\\Tepe.Brt.Business\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\MISUKA\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -1844,8 +1844,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\MISUKA\\Desktop\\src\\Tepe.Brt.Data\\Tepe.Brt.Data.csproj": {
-              "projectPath": "C:\\Users\\MISUKA\\Desktop\\src\\Tepe.Brt.Data\\Tepe.Brt.Data.csproj"
+            "E:\\GitHub\\DotNet\\Teeth-API\\Tepe.Brt.Data\\Tepe.Brt.Data.csproj": {
+              "projectPath": "E:\\GitHub\\DotNet\\Teeth-API\\Tepe.Brt.Data\\Tepe.Brt.Data.csproj"
             }
           }
         }

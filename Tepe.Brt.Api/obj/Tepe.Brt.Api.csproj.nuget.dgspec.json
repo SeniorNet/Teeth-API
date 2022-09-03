@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\MISUKA\\Desktop\\src\\Tepe.Brt.Api\\Tepe.Brt.Api.csproj": {}
+    "E:\\GitHub\\DotNet\\Teeth-API\\Tepe.Brt.Api\\Tepe.Brt.Api.csproj": {}
   },
   "projects": {
-    "C:\\Users\\MISUKA\\Desktop\\src\\Tepe.Brt.Api\\Tepe.Brt.Api.csproj": {
+    "E:\\GitHub\\DotNet\\Teeth-API\\Tepe.Brt.Api\\Tepe.Brt.Api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\MISUKA\\Desktop\\src\\Tepe.Brt.Api\\Tepe.Brt.Api.csproj",
+        "projectUniqueName": "E:\\GitHub\\DotNet\\Teeth-API\\Tepe.Brt.Api\\Tepe.Brt.Api.csproj",
         "projectName": "Tepe.Brt.Api",
-        "projectPath": "C:\\Users\\MISUKA\\Desktop\\src\\Tepe.Brt.Api\\Tepe.Brt.Api.csproj",
+        "projectPath": "E:\\GitHub\\DotNet\\Teeth-API\\Tepe.Brt.Api\\Tepe.Brt.Api.csproj",
         "packagesPath": "C:\\Users\\MISUKA\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\MISUKA\\Desktop\\src\\Tepe.Brt.Api\\obj\\",
+        "outputPath": "E:\\GitHub\\DotNet\\Teeth-API\\Tepe.Brt.Api\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\MISUKA\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -28,11 +28,11 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\MISUKA\\Desktop\\src\\Tepe.Brt.Business\\Tepe.Brt.Business.csproj": {
-                "projectPath": "C:\\Users\\MISUKA\\Desktop\\src\\Tepe.Brt.Business\\Tepe.Brt.Business.csproj"
+              "E:\\GitHub\\DotNet\\Teeth-API\\Tepe.Brt.Business\\Tepe.Brt.Business.csproj": {
+                "projectPath": "E:\\GitHub\\DotNet\\Teeth-API\\Tepe.Brt.Business\\Tepe.Brt.Business.csproj"
               },
-              "C:\\Users\\MISUKA\\Desktop\\src\\Tepe.Brt.Data\\Tepe.Brt.Data.csproj": {
-                "projectPath": "C:\\Users\\MISUKA\\Desktop\\src\\Tepe.Brt.Data\\Tepe.Brt.Data.csproj"
+              "E:\\GitHub\\DotNet\\Teeth-API\\Tepe.Brt.Data\\Tepe.Brt.Data.csproj": {
+                "projectPath": "E:\\GitHub\\DotNet\\Teeth-API\\Tepe.Brt.Data\\Tepe.Brt.Data.csproj"
               }
             }
           }
@@ -92,14 +92,14 @@
         }
       }
     },
-    "C:\\Users\\MISUKA\\Desktop\\src\\Tepe.Brt.Business\\Tepe.Brt.Business.csproj": {
+    "E:\\GitHub\\DotNet\\Teeth-API\\Tepe.Brt.Business\\Tepe.Brt.Business.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\MISUKA\\Desktop\\src\\Tepe.Brt.Business\\Tepe.Brt.Business.csproj",
+        "projectUniqueName": "E:\\GitHub\\DotNet\\Teeth-API\\Tepe.Brt.Business\\Tepe.Brt.Business.csproj",
         "projectName": "Tepe.Brt.Business",
-        "projectPath": "C:\\Users\\MISUKA\\Desktop\\src\\Tepe.Brt.Business\\Tepe.Brt.Business.csproj",
+        "projectPath": "E:\\GitHub\\DotNet\\Teeth-API\\Tepe.Brt.Business\\Tepe.Brt.Business.csproj",
         "packagesPath": "C:\\Users\\MISUKA\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\MISUKA\\Desktop\\src\\Tepe.Brt.Business\\obj\\",
+        "outputPath": "E:\\GitHub\\DotNet\\Teeth-API\\Tepe.Brt.Business\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\MISUKA\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -116,8 +116,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\MISUKA\\Desktop\\src\\Tepe.Brt.Data\\Tepe.Brt.Data.csproj": {
-                "projectPath": "C:\\Users\\MISUKA\\Desktop\\src\\Tepe.Brt.Data\\Tepe.Brt.Data.csproj"
+              "E:\\GitHub\\DotNet\\Teeth-API\\Tepe.Brt.Data\\Tepe.Brt.Data.csproj": {
+                "projectPath": "E:\\GitHub\\DotNet\\Teeth-API\\Tepe.Brt.Data\\Tepe.Brt.Data.csproj"
               }
             }
           }
@@ -156,14 +156,14 @@
         }
       }
     },
-    "C:\\Users\\MISUKA\\Desktop\\src\\Tepe.Brt.Data\\Tepe.Brt.Data.csproj": {
+    "E:\\GitHub\\DotNet\\Teeth-API\\Tepe.Brt.Data\\Tepe.Brt.Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\MISUKA\\Desktop\\src\\Tepe.Brt.Data\\Tepe.Brt.Data.csproj",
+        "projectUniqueName": "E:\\GitHub\\DotNet\\Teeth-API\\Tepe.Brt.Data\\Tepe.Brt.Data.csproj",
         "projectName": "Tepe.Brt.Data",
-        "projectPath": "C:\\Users\\MISUKA\\Desktop\\src\\Tepe.Brt.Data\\Tepe.Brt.Data.csproj",
+        "projectPath": "E:\\GitHub\\DotNet\\Teeth-API\\Tepe.Brt.Data\\Tepe.Brt.Data.csproj",
         "packagesPath": "C:\\Users\\MISUKA\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\MISUKA\\Desktop\\src\\Tepe.Brt.Data\\obj\\",
+        "outputPath": "E:\\GitHub\\DotNet\\Teeth-API\\Tepe.Brt.Data\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\MISUKA\\AppData\\Roaming\\NuGet\\NuGet.Config",

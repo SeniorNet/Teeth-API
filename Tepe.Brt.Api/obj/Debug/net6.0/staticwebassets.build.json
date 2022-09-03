@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "JbBklGFnGLbEcCHPBVM5HTrBwPALSDjTRbu5mMkUrww=",
+  "Hash": "/KqnlksTcHlNPudr9AL5hObuByBHMHKbRtEPujc/Vdo=",
   "Source": "Tepe.Brt.Api",
   "BasePath": "_content/Tepe.Brt.Api",
   "Mode": "Default",
@@ -10,7 +10,7 @@
     {
       "Name": "Tepe.Brt.Api\\wwwroot",
       "Source": "Tepe.Brt.Api",
-      "ContentRoot": "D:\\Development\\Github\\tepe.brt\\src\\Tepe.Brt.Api\\wwwroot\\",
+      "ContentRoot": "E:\\GitHub\\DotNet\\Teeth-API\\Tepe.Brt.Api\\wwwroot\\",
       "BasePath": "_content/Tepe.Brt.Api",
       "Pattern": "**"
     }

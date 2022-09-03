@@ -11,7 +11,7 @@ namespace Tepe.Brt.Data.Entities
 
         public string? Email { get; set; }
 
-        public int? PhoneNumber { get; set; }
+        public string? PhoneNumber { get; set; }
 
         public virtual ICollection<RecommendationEntity> Recommendations { get; set; }
     }

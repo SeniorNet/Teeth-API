@@ -12,3 +12,17 @@ D:\Development\Github\tepe.brt\src\Tepe.Brt.Data\obj\Debug\net6.0\refint\Tepe.Br
 D:\Development\Github\tepe.brt\src\Tepe.Brt.Data\obj\Debug\net6.0\Tepe.Brt.Data.pdb
 D:\Development\Github\tepe.brt\src\Tepe.Brt.Data\obj\Debug\net6.0\Tepe.Brt.Data.genruntimeconfig.cache
 D:\Development\Github\tepe.brt\src\Tepe.Brt.Data\obj\Debug\net6.0\ref\Tepe.Brt.Data.dll
+E:\GitHub\DotNet\Teeth-API\Tepe.Brt.Data\bin\Debug\net6.0\Tepe.Brt.Data.deps.json
+E:\GitHub\DotNet\Teeth-API\Tepe.Brt.Data\bin\Debug\net6.0\Tepe.Brt.Data.runtimeconfig.json
+E:\GitHub\DotNet\Teeth-API\Tepe.Brt.Data\bin\Debug\net6.0\Tepe.Brt.Data.dll
+E:\GitHub\DotNet\Teeth-API\Tepe.Brt.Data\bin\Debug\net6.0\ref\Tepe.Brt.Data.dll
+E:\GitHub\DotNet\Teeth-API\Tepe.Brt.Data\bin\Debug\net6.0\Tepe.Brt.Data.pdb
+E:\GitHub\DotNet\Teeth-API\Tepe.Brt.Data\obj\Debug\net6.0\Tepe.Brt.Data.csproj.AssemblyReference.cache
+E:\GitHub\DotNet\Teeth-API\Tepe.Brt.Data\obj\Debug\net6.0\Tepe.Brt.Data.GeneratedMSBuildEditorConfig.editorconfig
+E:\GitHub\DotNet\Teeth-API\Tepe.Brt.Data\obj\Debug\net6.0\Tepe.Brt.Data.AssemblyInfoInputs.cache
+E:\GitHub\DotNet\Teeth-API\Tepe.Brt.Data\obj\Debug\net6.0\Tepe.Brt.Data.AssemblyInfo.cs
+E:\GitHub\DotNet\Teeth-API\Tepe.Brt.Data\obj\Debug\net6.0\Tepe.Brt.Data.csproj.CoreCompileInputs.cache
+E:\GitHub\DotNet\Teeth-API\Tepe.Brt.Data\obj\Debug\net6.0\Tepe.Brt.Data.dll
+E:\GitHub\DotNet\Teeth-API\Tepe.Brt.Data\obj\Debug\net6.0\ref\Tepe.Brt.Data.dll
+E:\GitHub\DotNet\Teeth-API\Tepe.Brt.Data\obj\Debug\net6.0\Tepe.Brt.Data.pdb
+E:\GitHub\DotNet\Teeth-API\Tepe.Brt.Data\obj\Debug\net6.0\Tepe.Brt.Data.genruntimeconfig.cache
