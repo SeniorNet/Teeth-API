@@ -57,7 +57,7 @@ namespace Tepe.Brt.Api.Controllers
 
         // Method to save the patient detail
         [HttpPost(Name = "SavePatientDetail")]
-        public async Task<IResult> SavePatientDetail([FromBody]DataVM model)
+        public async Task<IResult> SavePatientDetail([FromForm]DataVM model)
         {
             PatientVM patientModel = new PatientVM();
             patientModel.Email = model.email;
@@ -93,7 +93,9 @@ namespace Tepe.Brt.Api.Controllers
                 return Results.NotFound();
             }
 
-            foreach (var item in model.recommendations)
+            var data = JsonConvert.DeserializeObject<List<RecommendItem>>(model.recommendations);
+
+            foreach (var item in data)
             {
                 ProductVM product = new ProductVM();
                 product.Area = item.area;
@@ -148,5 +150,19 @@ namespace Tepe.Brt.Api.Controllers
                       + Guid.NewGuid().ToString().Substring(0, 4)
                       + Path.GetExtension(fileName);
         }
+    }
+
+    public class Recommendations
+    {
+        public List<RecommendItem> lists { get; set; } = new List<RecommendItem>();
+    }
+
+    public class RecommendItem
+    {
+        public string title { get; set; } = string.Empty;
+
+        public string description { get; set; } = string.Empty;
+
+        public string area { get; set; } = string.Empty;
     }
 }
