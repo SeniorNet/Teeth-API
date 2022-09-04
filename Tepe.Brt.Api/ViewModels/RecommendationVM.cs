@@ -5,11 +5,6 @@ namespace Tepe.Brt.Api.ViewModels
 {
     public class RecommendationVM
     {
-        public RecommendationVM()
-        {
-            Patient = new PatientVM();
-        }
-
         public Guid Id { get; set; }
 
         public string? Comment { get; set; }
@@ -31,6 +26,6 @@ namespace Tepe.Brt.Api.ViewModels
 
         public Guid PatientID { get; set; }
 
-        public PatientVM Patient { get; set; }
+        //public PatientVM Patient { get; set; }
     }
 }

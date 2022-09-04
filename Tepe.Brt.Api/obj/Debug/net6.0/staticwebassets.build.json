@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "SkdAlv0t30ihJJKN6bbItMGLiwJ2Xm0j+RCumeugVao=",
+  "Hash": "2lk+FPKMG+R2NLmHsgjqf1vxMvyMAAlOjEzlHqwbAoo=",
   "Source": "Tepe.Brt.Api",
   "BasePath": "_content/Tepe.Brt.Api",
   "Mode": "Default",
@@ -85,6 +85,23 @@
       "OriginalItemSpec": "wwwroot\\files\\RecommendationImages\\Screenshot_2022.07.17_06.49.52.629_004e.png"
     },
     {
+      "Identity": "E:\\GitHub\\DotNet\\Teeth-API\\Tepe.Brt.Api\\wwwroot\\files\\RecommendationImages\\Screenshot_2022.07.17_06.49.52.629_0deb.png",
+      "SourceId": "Tepe.Brt.Api",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\GitHub\\DotNet\\Teeth-API\\Tepe.Brt.Api\\wwwroot\\",
+      "BasePath": "_content/Tepe.Brt.Api",
+      "RelativePath": "files/RecommendationImages/Screenshot_2022.07.17_06.49.52.629_0deb.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\files\\RecommendationImages\\Screenshot_2022.07.17_06.49.52.629_0deb.png"
+    },
+    {
       "Identity": "E:\\GitHub\\DotNet\\Teeth-API\\Tepe.Brt.Api\\wwwroot\\files\\RecommendationImages\\Screenshot_2022.07.17_06.49.52.629_2a69.png",
       "SourceId": "Tepe.Brt.Api",
       "SourceType": "Discovered",
@@ -100,6 +117,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\files\\RecommendationImages\\Screenshot_2022.07.17_06.49.52.629_2a69.png"
+    },
+    {
+      "Identity": "E:\\GitHub\\DotNet\\Teeth-API\\Tepe.Brt.Api\\wwwroot\\files\\RecommendationImages\\Screenshot_2022.07.17_06.49.52.629_3092.png",
+      "SourceId": "Tepe.Brt.Api",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\GitHub\\DotNet\\Teeth-API\\Tepe.Brt.Api\\wwwroot\\",
+      "BasePath": "_content/Tepe.Brt.Api",
+      "RelativePath": "files/RecommendationImages/Screenshot_2022.07.17_06.49.52.629_3092.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\files\\RecommendationImages\\Screenshot_2022.07.17_06.49.52.629_3092.png"
     },
     {
       "Identity": "E:\\GitHub\\DotNet\\Teeth-API\\Tepe.Brt.Api\\wwwroot\\files\\RecommendationImages\\Screenshot_2022.07.17_06.49.52.629_5308.png",
@@ -119,6 +153,23 @@
       "OriginalItemSpec": "wwwroot\\files\\RecommendationImages\\Screenshot_2022.07.17_06.49.52.629_5308.png"
     },
     {
+      "Identity": "E:\\GitHub\\DotNet\\Teeth-API\\Tepe.Brt.Api\\wwwroot\\files\\RecommendationImages\\Screenshot_2022.07.17_06.49.52.629_953b.png",
+      "SourceId": "Tepe.Brt.Api",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\GitHub\\DotNet\\Teeth-API\\Tepe.Brt.Api\\wwwroot\\",
+      "BasePath": "_content/Tepe.Brt.Api",
+      "RelativePath": "files/RecommendationImages/Screenshot_2022.07.17_06.49.52.629_953b.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\files\\RecommendationImages\\Screenshot_2022.07.17_06.49.52.629_953b.png"
+    },
+    {
       "Identity": "E:\\GitHub\\DotNet\\Teeth-API\\Tepe.Brt.Api\\wwwroot\\files\\RecommendationImages\\Screenshot_2022.07.17_06.49.52.629_a15b.png",
       "SourceId": "Tepe.Brt.Api",
       "SourceType": "Discovered",
@@ -134,6 +185,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\files\\RecommendationImages\\Screenshot_2022.07.17_06.49.52.629_a15b.png"
+    },
+    {
+      "Identity": "E:\\GitHub\\DotNet\\Teeth-API\\Tepe.Brt.Api\\wwwroot\\files\\RecommendationImages\\Screenshot_2022.07.17_06.49.52.629_b129.png",
+      "SourceId": "Tepe.Brt.Api",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\GitHub\\DotNet\\Teeth-API\\Tepe.Brt.Api\\wwwroot\\",
+      "BasePath": "_content/Tepe.Brt.Api",
+      "RelativePath": "files/RecommendationImages/Screenshot_2022.07.17_06.49.52.629_b129.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\files\\RecommendationImages\\Screenshot_2022.07.17_06.49.52.629_b129.png"
     },
     {
       "Identity": "E:\\GitHub\\DotNet\\Teeth-API\\Tepe.Brt.Api\\wwwroot\\files\\RecommendationImages\\Screenshot_2022.07.17_06.49.52.629_b744.png",
@@ -153,6 +221,23 @@
       "OriginalItemSpec": "wwwroot\\files\\RecommendationImages\\Screenshot_2022.07.17_06.49.52.629_b744.png"
     },
     {
+      "Identity": "E:\\GitHub\\DotNet\\Teeth-API\\Tepe.Brt.Api\\wwwroot\\files\\RecommendationImages\\Screenshot_2022.07.17_06.49.52.629_b804.png",
+      "SourceId": "Tepe.Brt.Api",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\GitHub\\DotNet\\Teeth-API\\Tepe.Brt.Api\\wwwroot\\",
+      "BasePath": "_content/Tepe.Brt.Api",
+      "RelativePath": "files/RecommendationImages/Screenshot_2022.07.17_06.49.52.629_b804.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\files\\RecommendationImages\\Screenshot_2022.07.17_06.49.52.629_b804.png"
+    },
+    {
       "Identity": "E:\\GitHub\\DotNet\\Teeth-API\\Tepe.Brt.Api\\wwwroot\\files\\RecommendationImages\\Screenshot_2022.07.17_06.49.52.629_c3d9.png",
       "SourceId": "Tepe.Brt.Api",
       "SourceType": "Discovered",
@@ -168,6 +253,40 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\files\\RecommendationImages\\Screenshot_2022.07.17_06.49.52.629_c3d9.png"
+    },
+    {
+      "Identity": "E:\\GitHub\\DotNet\\Teeth-API\\Tepe.Brt.Api\\wwwroot\\files\\RecommendationImages\\Screenshot_2022.07.17_06.49.52.629_e1a4.png",
+      "SourceId": "Tepe.Brt.Api",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\GitHub\\DotNet\\Teeth-API\\Tepe.Brt.Api\\wwwroot\\",
+      "BasePath": "_content/Tepe.Brt.Api",
+      "RelativePath": "files/RecommendationImages/Screenshot_2022.07.17_06.49.52.629_e1a4.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\files\\RecommendationImages\\Screenshot_2022.07.17_06.49.52.629_e1a4.png"
+    },
+    {
+      "Identity": "E:\\GitHub\\DotNet\\Teeth-API\\Tepe.Brt.Api\\wwwroot\\files\\RecommendationImages\\Screenshot_2022.07.17_06.49.52.629_e890.png",
+      "SourceId": "Tepe.Brt.Api",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\GitHub\\DotNet\\Teeth-API\\Tepe.Brt.Api\\wwwroot\\",
+      "BasePath": "_content/Tepe.Brt.Api",
+      "RelativePath": "files/RecommendationImages/Screenshot_2022.07.17_06.49.52.629_e890.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\files\\RecommendationImages\\Screenshot_2022.07.17_06.49.52.629_e890.png"
     }
   ]
 }

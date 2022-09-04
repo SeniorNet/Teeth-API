@@ -73,7 +73,6 @@ namespace Tepe.Brt.Api.Controllers
             recommend.Missing = String.Join(",", model.missing.Select(p => p.ToString()).ToArray());
             recommend.Comment = model.comment;
             recommend.PatientID = patients.Id;
-            recommend.Patient = patientModel;
 
             if (model.teeth_image != null)
             {
