@@ -147,13 +147,8 @@ namespace Tepe.Brt.Api.Controllers
             return Path.GetFileNameWithoutExtension(fileName)
                       + "_"
                       + Guid.NewGuid().ToString().Substring(0, 4)
-                      + Path.GetExtension(fileName);
+                      + Path.GetExtension(fileName) + ".png";
         }
-    }
-
-    public class Recommendations
-    {
-        public List<RecommendItem> lists { get; set; } = new List<RecommendItem>();
     }
 
     public class RecommendItem
