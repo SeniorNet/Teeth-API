@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "/KqnlksTcHlNPudr9AL5hObuByBHMHKbRtEPujc/Vdo=",
+  "Hash": "wCgQbFdFpTz2wamzBK6dsghQyEUgpE2EdFVrjJC/qRM=",
   "Source": "Tepe.Brt.Api",
   "BasePath": "_content/Tepe.Brt.Api",
   "Mode": "Default",
@@ -15,5 +15,23 @@
       "Pattern": "**"
     }
   ],
-  "Assets": []
+  "Assets": [
+    {
+      "Identity": "E:\\GitHub\\DotNet\\Teeth-API\\Tepe.Brt.Api\\wwwroot\\files\\RecommendationImages\\blob_40bc.png",
+      "SourceId": "Tepe.Brt.Api",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\GitHub\\DotNet\\Teeth-API\\Tepe.Brt.Api\\wwwroot\\",
+      "BasePath": "_content/Tepe.Brt.Api",
+      "RelativePath": "files/RecommendationImages/blob_40bc.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\files\\RecommendationImages\\blob_40bc.png"
+    }
+  ]
 }

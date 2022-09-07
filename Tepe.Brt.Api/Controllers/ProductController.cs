@@ -2,7 +2,7 @@
 using Microsoft.AspNetCore.Mvc;
 using Tepe.Brt.Api.ViewModels;
 using Tepe.Brt.Business.Services;
-using Tepe.Brt.Data.Entities;
+using Tepe.Brt.Data;
 
 namespace Tepe.Brt.Api.Controllers
 {
@@ -22,19 +22,19 @@ namespace Tepe.Brt.Api.Controllers
             _genericService = genericService;
         }
 
-        #region Product
+        #region Prduct
 
         // Method to get the list of the products
         [HttpGet(Name = "GetProducts")]
         public async Task<IResult> GetProductsList()
         {
             var result = await _genericService.GetProductList();
-            IEnumerable<ProductVM> patients = _mapper.Map<IEnumerable<ProductVM>>(result);
-            if (patients == null)
+            IEnumerable<ProductVM> products = _mapper.Map<IEnumerable<ProductVM>>(result);
+            if (products == null)
             {
                 return Results.NotFound();
             }
-            return Results.Ok(patients);
+            return Results.Ok(products);
         }
 
         // Method to get the product detail by product ID
@@ -43,38 +43,38 @@ namespace Tepe.Brt.Api.Controllers
         public async Task<IResult> GetProductDetailById(Guid id)
         {
             var result = await _genericService.GetProductDetailById(id);
-            ProductVM patient = _mapper.Map<ProductVM>(result);
-            if (patient == null)
+            ProductVM product = _mapper.Map<ProductVM>(result);
+            if (product == null)
             {
                 return Results.NotFound();
             }
-            return Results.Ok(patient);
+            return Results.Ok(product);
         }
 
         // Method to save the product detail
         [HttpPost(Name = "SaveProductDetail")]
         public async Task<IResult> SaveProductDetail(ProductVM model)
         {
-            ProductEntity patients = _mapper.Map<ProductEntity>(model);
-            var result = await _genericService.SaveProductDetail(patients);
+            ProductEntity products = _mapper.Map<ProductEntity>(model);
+            var result = await _genericService.SaveProductDetail(products);
             if (result == null)
             {
                 return Results.NotFound();
             }
-            return Results.Ok(patients);
+            return Results.Ok(products);
         }
 
         // Method to update the product detail
         [HttpPut(Name = "UpdateProductDetail")]
         public async Task<IResult> UpdateProductDetail(ProductVM model)
         {
-            ProductEntity patients = _mapper.Map<ProductEntity>(model);
-            var result = await _genericService.UpdateProductDetail(patients);
+            ProductEntity products = _mapper.Map<ProductEntity>(model);
+            var result = await _genericService.UpdateProductDetail(products);
             if (result == null)
             {
                 return Results.NotFound();
             }
-            return Results.Ok(patients);
+            return Results.Ok(products);
         }
 
         // Method to delete the product detail

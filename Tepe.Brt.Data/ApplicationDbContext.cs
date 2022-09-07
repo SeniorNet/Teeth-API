@@ -18,9 +18,12 @@ namespace Tepe.Brt.Data
 
         #region Entities
         public DbSet<PatientEntity> Patients { get; set; }
-        public DbSet<ProductEntity> Products { get; set; }
+        public DbSet<RecoItemEntity> RecoItems { get; set; }
         public DbSet<RecommendationEntity> Recommendations { get; set; }
-
+        public DbSet<CategoryEntity> Categories { get; set; }
+        public DbSet<ProductEntity> Products { get; set; }
+        
+        public DbSet<MarketEntity> Markets { get; set; }
         #endregion
 
     }

@@ -10,7 +10,7 @@ namespace Tepe.Brt.Api
         {
             CreateMap<PatientEntity, PatientVM>().ReverseMap();
             CreateMap<RecommendationEntity, RecommendationVM>().ReverseMap();
-            CreateMap<ProductEntity, ProductVM>().ReverseMap();
+            CreateMap<RecoItemEntity, RecoItemVM>().ReverseMap();
         }
     }
 }

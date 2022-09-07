@@ -63,7 +63,7 @@ namespace Tepe.Brt.Data.Migrations
 
                     b.HasIndex("RecommendationID");
 
-                    b.ToTable("Products");
+                    b.ToTable("RecoItems");
                 });
 
             modelBuilder.Entity("Tepe.Brt.Data.Entities.RecommendationEntity", b =>

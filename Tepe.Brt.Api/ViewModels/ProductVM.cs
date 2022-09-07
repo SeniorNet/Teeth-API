@@ -1,23 +1,24 @@
-﻿using Tepe.Brt.Data.Entities;
-
-namespace Tepe.Brt.Api.ViewModels
+﻿namespace Tepe.Brt.Api.ViewModels
 {
     public class ProductVM
     {
-        //public ProductVM()
-        //{
-        //    Recommendation = new RecommendationEntity();
-        //}
+        public ProductVM()
+        {
+            Category = new CategoryVM();
+        }
+
         public Guid Id { get; set; }
 
-        public string? Title { get; set; }
+        public string? Name { get; set; }
 
-        public string? Description { get; set; }
+        public string? Size { get; set; }
 
-        public string? Area { get; set; }
+        public string? Hex { get; set; }
 
-        public Guid RecommendationID { get; set; }
+        public Boolean isChecked { get; set; } = false;
 
-        public RecommendationEntity? Recommendation { get; set; }
+        public Guid CategoryID { get; set; }
+
+        public CategoryVM Category { get; set; }
     }
 }

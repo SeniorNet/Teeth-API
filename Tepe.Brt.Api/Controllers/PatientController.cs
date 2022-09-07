@@ -96,16 +96,16 @@ namespace Tepe.Brt.Api.Controllers
 
             foreach (var item in data)
             {
-                ProductVM product = new ProductVM();
-                product.Area = item.area;
-                product.Title = item.title;
-                product.Description = item.description;
-                product.RecommendationID = recommendEntity.Id;
+                RecoItemVM recoItem = new RecoItemVM();
+                recoItem.Area = item.area;
+                recoItem.Title = item.title;
+                recoItem.Description = item.description;
+                recoItem.RecommendationID = recommendEntity.Id;
 
-                ProductEntity products = _mapper.Map<ProductEntity>(product);
-                var result_products = await _genericService.SaveProductDetail(products);
+                RecoItemEntity recoItems = _mapper.Map<RecoItemEntity>(recoItem);
+                var result_recoItems = await _genericService.SaveRecoItemDetail(recoItems);
 
-                if(result_products == null)
+                if(result_recoItems == null)
                 {
                     return Results.NotFound();
                 }

@@ -22,103 +22,247 @@ namespace Tepe.Brt.Data.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder, 1L, 1);
 
-            modelBuilder.Entity("Tepe.Brt.Data.Entities.PatientEntity", b =>
-                {
-                    b.Property<Guid>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("uniqueidentifier");
+            modelBuilder.Entity("CategoryEntityMarketEntity", b =>
+            {
+                b.Property<Guid>("CategoriesId")
+                    .HasColumnType("uniqueidentifier");
 
-                    b.Property<string>("Email")
-                        .HasColumnType("nvarchar(max)");
+                b.Property<Guid>("MarketsId")
+                    .HasColumnType("uniqueidentifier");
 
-                    b.Property<string>("PhoneNumber")
-                        .HasColumnType("nvarchar(max)");
+                b.HasKey("CategoriesId", "MarketsId");
 
-                    b.HasKey("Id");
+                b.HasIndex("MarketsId");
 
-                    b.ToTable("Patients");
-                });
+                b.ToTable("CategoryEntityMarketEntity");
+            });
 
-            modelBuilder.Entity("Tepe.Brt.Data.Entities.ProductEntity", b =>
-                {
-                    b.Property<Guid>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("uniqueidentifier");
+            modelBuilder.Entity("Tepe.Brt.Data.CategoryEntity", b =>
+            {
+                b.Property<Guid>("Id")
+                    .ValueGeneratedOnAdd()
+                    .HasColumnType("uniqueidentifier");
 
-                    b.Property<string>("Area")
-                        .HasColumnType("nvarchar(max)");
+                b.Property<string>("Title")
+                    .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("Description")
-                        .HasColumnType("nvarchar(max)");
+                b.Property<string>("catImeage")
+                    .HasColumnType("nvarchar(max)");
 
-                    b.Property<Guid>("RecommendationID")
-                        .HasColumnType("uniqueidentifier");
+                b.Property<bool>("isOpen")
+                    .HasColumnType("bit");
 
-                    b.Property<string>("Title")
-                        .HasColumnType("nvarchar(max)");
+                b.HasKey("Id");
 
-                    b.HasKey("Id");
+                b.ToTable("Categories");
+            });
 
-                    b.HasIndex("RecommendationID");
+            modelBuilder.Entity("Tepe.Brt.Data.MarketEntity", b =>
+            {
+                b.Property<Guid>("Id")
+                    .ValueGeneratedOnAdd()
+                    .HasColumnType("uniqueidentifier");
 
-                    b.ToTable("Products");
-                });
+                b.Property<string>("Country")
+                    .HasColumnType("nvarchar(max)");
 
-            modelBuilder.Entity("Tepe.Brt.Data.Entities.RecommendationEntity", b =>
-                {
-                    b.Property<Guid>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("uniqueidentifier");
+                b.Property<string>("LangCode")
+                    .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("Bridge")
-                        .HasColumnType("nvarchar(max)");
+                b.HasKey("Id");
 
-                    b.Property<string>("Comment")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                b.ToTable("Markets");
+            });
 
-                    b.Property<string>("Image")
-                        .HasColumnType("nvarchar(max)");
+            modelBuilder.Entity("Tepe.Brt.Data.PatientEntity", b =>
+            {
+                b.Property<Guid>("Id")
+                    .ValueGeneratedOnAdd()
+                    .HasColumnType("uniqueidentifier");
 
-                    b.Property<string>("Missing")
-                        .HasColumnType("nvarchar(max)");
+                b.Property<string>("Email")
+                    .HasColumnType("nvarchar(max)");
 
-                    b.Property<Guid>("PatientID")
-                        .HasColumnType("uniqueidentifier");
+                b.Property<string>("PhoneNumber")
+                    .HasColumnType("nvarchar(max)");
 
-                    b.HasKey("Id");
+                b.HasKey("Id");
 
-                    b.HasIndex("PatientID");
+                b.ToTable("Patients");
+            });
 
-                    b.ToTable("Recommendations");
-                });
+            modelBuilder.Entity("Tepe.Brt.Data.ProductEntity", b =>
+            {
+                b.Property<Guid>("Id")
+                    .ValueGeneratedOnAdd()
+                    .HasColumnType("uniqueidentifier");
 
-            modelBuilder.Entity("Tepe.Brt.Data.Entities.ProductEntity", b =>
-                {
-                    b.HasOne("Tepe.Brt.Data.Entities.RecommendationEntity", "Recommendation")
-                        .WithMany()
-                        .HasForeignKey("RecommendationID")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                b.Property<Guid>("CategoryID")
+                    .HasColumnType("uniqueidentifier");
 
-                    b.Navigation("Recommendation");
-                });
+                b.Property<string>("Hex")
+                    .HasColumnType("nvarchar(max)");
 
-            modelBuilder.Entity("Tepe.Brt.Data.Entities.RecommendationEntity", b =>
-                {
-                    b.HasOne("Tepe.Brt.Data.Entities.PatientEntity", "Patient")
-                        .WithMany("Recommendations")
-                        .HasForeignKey("PatientID")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                b.Property<string>("Name")
+                    .HasColumnType("nvarchar(max)");
 
-                    b.Navigation("Patient");
-                });
+                b.Property<string>("Size")
+                    .HasColumnType("nvarchar(max)");
 
-            modelBuilder.Entity("Tepe.Brt.Data.Entities.PatientEntity", b =>
-                {
-                    b.Navigation("Recommendations");
-                });
+                b.HasKey("Id");
+
+                b.HasIndex("CategoryID");
+
+                b.ToTable("Products");
+            });
+
+            modelBuilder.Entity("Tepe.Brt.Data.PuffEntity", b =>
+            {
+                b.Property<Guid>("Id")
+                    .ValueGeneratedOnAdd()
+                    .HasColumnType("uniqueidentifier");
+
+                b.Property<string>("Content")
+                    .HasColumnType("nvarchar(max)");
+
+                b.Property<string>("Heading")
+                    .HasColumnType("nvarchar(max)");
+
+                b.Property<Guid>("MarketID")
+                    .HasColumnType("uniqueidentifier");
+
+                b.Property<string>("PuffImage")
+                    .HasColumnType("nvarchar(max)");
+
+                b.HasKey("Id");
+
+                b.HasIndex("MarketID");
+
+                b.ToTable("Puffs");
+            });
+
+            modelBuilder.Entity("Tepe.Brt.Data.RecoItemEntity", b =>
+            {
+                b.Property<Guid>("Id")
+                    .ValueGeneratedOnAdd()
+                    .HasColumnType("uniqueidentifier");
+
+                b.Property<string>("Area")
+                    .HasColumnType("nvarchar(max)");
+
+                b.Property<string>("Description")
+                    .HasColumnType("nvarchar(max)");
+
+                b.Property<Guid>("RecommendationID")
+                    .HasColumnType("uniqueidentifier");
+
+                b.Property<string>("Title")
+                    .HasColumnType("nvarchar(max)");
+
+                b.HasKey("Id");
+
+                b.HasIndex("RecommendationID");
+
+                b.ToTable("RecoItems");
+            });
+
+            modelBuilder.Entity("Tepe.Brt.Data.RecommendationEntity", b =>
+            {
+                b.Property<Guid>("Id")
+                    .ValueGeneratedOnAdd()
+                    .HasColumnType("uniqueidentifier");
+
+                b.Property<string>("Bridge")
+                    .HasColumnType("nvarchar(max)");
+
+                b.Property<string>("Comment")
+                    .IsRequired()
+                    .HasColumnType("nvarchar(max)");
+
+                b.Property<string>("Missing")
+                    .HasColumnType("nvarchar(max)");
+
+                b.Property<Guid>("PatientID")
+                    .HasColumnType("uniqueidentifier");
+
+                b.Property<string>("TeethImage")
+                    .HasColumnType("nvarchar(max)");
+
+                b.HasKey("Id");
+
+                b.HasIndex("PatientID");
+
+                b.ToTable("Recommendations");
+            });
+
+            modelBuilder.Entity("CategoryEntityMarketEntity", b =>
+            {
+                b.HasOne("Tepe.Brt.Data.CategoryEntity", null)
+                    .WithMany()
+                    .HasForeignKey("CategoriesId")
+                    .OnDelete(DeleteBehavior.Cascade)
+                    .IsRequired();
+
+                b.HasOne("Tepe.Brt.Data.MarketEntity", null)
+                    .WithMany()
+                    .HasForeignKey("MarketsId")
+                    .OnDelete(DeleteBehavior.Cascade)
+                    .IsRequired();
+            });
+
+            modelBuilder.Entity("Tepe.Brt.Data.ProductEntity", b =>
+            {
+                b.HasOne("Tepe.Brt.Data.CategoryEntity", "Category")
+                    .WithMany("Products")
+                    .HasForeignKey("CategoryID")
+                    .OnDelete(DeleteBehavior.Cascade)
+                    .IsRequired();
+
+                b.Navigation("Category");
+            });
+
+            modelBuilder.Entity("Tepe.Brt.Data.PuffEntity", b =>
+            {
+                b.HasOne("Tepe.Brt.Data.MarketEntity", "Market")
+                    .WithMany()
+                    .HasForeignKey("MarketID")
+                    .OnDelete(DeleteBehavior.Cascade)
+                    .IsRequired();
+
+                b.Navigation("Market");
+            });
+
+            modelBuilder.Entity("Tepe.Brt.Data.RecoItemEntity", b =>
+            {
+                b.HasOne("Tepe.Brt.Data.RecommendationEntity", "Recommendation")
+                    .WithMany()
+                    .HasForeignKey("RecommendationID")
+                    .OnDelete(DeleteBehavior.Cascade)
+                    .IsRequired();
+
+                b.Navigation("Recommendation");
+            });
+
+            modelBuilder.Entity("Tepe.Brt.Data.RecommendationEntity", b =>
+            {
+                b.HasOne("Tepe.Brt.Data.PatientEntity", "Patient")
+                    .WithMany("Recommendations")
+                    .HasForeignKey("PatientID")
+                    .OnDelete(DeleteBehavior.Cascade)
+                    .IsRequired();
+
+                b.Navigation("Patient");
+            });
+
+            modelBuilder.Entity("Tepe.Brt.Data.CategoryEntity", b =>
+            {
+                b.Navigation("Products");
+            });
+
+            modelBuilder.Entity("Tepe.Brt.Data.PatientEntity", b =>
+            {
+                b.Navigation("Recommendations");
+            });
 #pragma warning restore 612, 618
         }
     }
